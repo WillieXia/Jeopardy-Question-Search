@@ -1,5 +1,3 @@
-
-
  #header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('jeopardy-small-banner.jpg');
@@ -8,12 +6,176 @@
   background-attachment: fixed;
 }
 
-.textbox1{
-   	width: 300px; height: 50px;
-   	border-radius: 5px;
-   	position: relative;
-  	top: 90%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  	position: absolute;
- }
+#section1{
+  height:30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('redback.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section2{
+  height:30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('orangeback.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#section3{
+  height:30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('yellowback.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section4{
+  height:30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('greenback.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#randomnav{
+  color: white;
+}
+
+#bigtext{
+  color:white
+}
+
+#evestart{
+  position: relative;
+  width:9%;
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  height: 4vh;
+  border-radius: 5px;
+}
+#eveend{
+  position: relative;
+  width:9%;
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  height: 4vh;
+  border-radius: 5px;
+}
+#eveinput{
+  position: relative;
+  width:9%;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  height: 4vh;
+  border-radius: 5px;
+}
+#evequestioninput{
+  position: relative;
+  width:9%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  height: 4vh;
+  border-radius: 5px;
+}
+#evecategoryinput{
+  position: relative;
+  width:9%;
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  height: 4vh;
+  border-radius: 5px;
+}
+#evesubmit{
+  position: relative;
+  width:9%;
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  height: 4vh;
+  border-radius: 5px;
+}
+#categorywarning{
+  position: relative;
+  position: absolute;
+  top: 95%;
+  left: 60%;
+  width:40%;
+  color:white;
+}
+#startlabel{
+  position: relative;
+  position: absolute;
+  top: 95%;
+  left: 20%;
+  width:10%;
+  color:white;
+}
+#endlabel{
+  position: relative;
+  position: absolute;
+  top: 95%;
+  left: 30%;
+  width:10%;
+  color:white;
+}
+
+#categoryinput{
+  position:relative;
+  top:150;
+}
+
+#categorysubmit{
+  position: relative;
+  left:5%;
+}
+
+#endinput{
+  position: relative;
+  left:36%;
+  position:absolute;
+}
+#datesubmit{
+  position: relative;
+  left:18%;
+}
+
+
+.resultDesc{
+  text-align: center;
+}
+
+#searchbycattitle{
+  color:white;
+}
+
+#searchbydate{
+  color:white;
+}
+#startlabel2{
+  color:white;
+  left:-10%;
+  top:-30%;
+}
+#endlabel2{
+  color:white;
+  position:relative;
+  left: 2%;
+}
+#levellabel{
+  color:white;
+}
+#numberlabel{
+  color:white;
+}
+#levellabel{
+  color:white;
+}
+#randomlabel{
+  color:white;
+}
+#numrandomlabel{
+  color:white;
+}

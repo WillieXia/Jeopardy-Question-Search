@@ -8,30 +8,93 @@
   		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<script src="scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
+    <script src="smooth-scroll.js"></script>
+
+    <script>
+          var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <section id="header">
     	<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">Jeopardy Question Directory</a>
+		      <a class="navbar-brand" id="bigtext" href="#">Jeopardy Question Directory</a>
 		    </div>
 		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Category Search</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">ID Search</a></li>
+		      <li><a class="nav-link" href="#categorysearch">Search by Category</a></li>
+              <li><a class="nav-link" href="#date">Search By Date</a></li>
+              <li><a class="nav-link" href="#level">Search by Level of Difficulty</a></li>
 		    </ul>
-		    <button class="btn btn-danger navbar-btn">Button</button>
+		    <button class="btn btn-danger navbar-btn"><a href="#Random" id="randomnav">Random Generator!</a></button>
 		  </div>
 		</nav>
-        <form>
-        <input id="input" class="textbox1" type="text" placeholder="                           ID of the Movie"><br>
-        </form>
-        <script>
-        	//console.log(document.getElementById("input").text)
-       	</script>
-    </section>
-    <body onkeypress="handleEnter(event)">
         
-    </body>
+        <div class="everything">
+            <form><input id="evequestioninput" type="evetext" placeholder="Quesiton"><br></form>
+            <form><input id="evecategoryinput" type="evetext" placeholder="Category ID "><br></form>
+            <label id="categorywarning">(You can use the category search to find ID)</label>
+            <label id="startlabel" for="evestart">Start date:</label>
+            <input type="date" id="evestart" name="trip-start">
+            <label id="endlabel" for="eveend">End date:</label>
+            <input type="date" id="eveend" name="trip-end">
+            <input id="eveinput" class="intro3" type="text" placeholder="Value of Question"><br>
+            <button id="evesubmit" onclick="questionSearch()">Search questions!</button>
+        </div>
+    </section>
+    <section>
+    <div class = "everythingvalues"></div>
+    </section>
+    <section id="section1">
+    <div class = "categorysearch" id="categorysearch">
+        <div class="container">
+            <h1 class="text-center" id="searchbycattitle">Search By Category</h1>
+            <form><input id="categoryinput" class="textbox1" type="text" placeholder="Category"><br></form>
+            <button type = "button" id="categorysubmit" onclick="categoryGeneration()">Submit</button>
+            <div class="categoryvalues"></div>
+        </div>
+    </div>
+    </section>
+    <section id="section2">
+    <div class = "date" id = "date">
+        <div class="container">
+            <h1 class="text-center" id="searchbydate">Search By Date</h1>
+            <div class="row">
+                <div class="date-input">
+                    <label for="start" id="startlabel2">Start date:</label>
+                    <input type="date" id="startinput" name="trip-start">
+                    <label for="end" id="endlabel2">End date:</label>
+                    <input type="date" id="endinput" name="trip-start">
+                    <button type = "button" id="datesubmit" onclick="dateGeneration()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="section3">
+    <div class="values"></div>
+    <div class = "level" id = "level">
+        <div class="container">
+            <h1 class="text-center" id="levellabel">Search By Level of Difficulty</h1>
+            <label id="numberlabel"># of Clues to Generate</label>
+            <input id="numberinput" type="text" placeholder="100"><br>
+            <label id="levellabel">Value of Question</label>
+            <input id="levelinput" type="text" placeholder="NaN"><br>
+            <button onclick="levelGenerator()">Generate questions!</button>
+        </div>
+        <div class="levelvalues"></div>
+    </div>
+    </section>
+    <section id="section4">
+    <div class = "container" id = "Random">
+        <h1 class = "text-center" id="randomlabel">Random Question Generator!</h1>
+        <label id="numrandomlabel"># of Random Clues to Generate</label>
+        <input id="randominput" class="textbox2" type="text" placeholder="1"><br>
+        <button onclick="randomGenerator()">Generate a random question</button>
+    </div>
+    <div class ="randomvalues"></div>
+    </section>
+
+    
 </html>
 
