@@ -3,7 +3,7 @@ All elements were styled in basic CSS, as functionality was prioritized over app
 */
 #header {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('jeopardy-small-banner.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('jeopardy-banner.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
