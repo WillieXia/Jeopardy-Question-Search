@@ -4,4 +4,4 @@ A Jeopardy Question Webapp that searches question dependent on inputs and refine
 
 Uses JavaScript, HTML, CSS, Bootstrap, and Ajax.
 
-Link to wedapp: https://github.com/WillieXia/Jeopardy-Question-Search
+Link to wedapp: https://williexia.github.io/Jeopardy-Question-Search/
