@@ -56,7 +56,7 @@ function dateGeneration(){
 			$.each(responseData, function( index, value ) {
 				var answer = "'"+(value.answer)+"'";
 				var airdate = "'"+(value.airdate)+"'";
-				output += '<h1>' + ' Value: ' + value.value + " | Question: "+ value.question + '</h1>';
+				output += '<h4>' + ' Value: ' + value.value + " | Question: "+ value.question + '</h4>';
   				output += '<button onclick="showAnswer('+answer+')">Show Answer</button>';
   				output += '<button onclick="showAirdate('+airdate+')">Show Airdate</button>';
 			});
