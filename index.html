@@ -1,6 +1,6 @@
+<!-- Hello! This html was written using bootstrap and ajax!-->
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Trivia Generator</title>
         <link rel="stylesheet" href="styles.css">
@@ -16,7 +16,7 @@
           var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <section id="header">
-    	<nav class="navbar navbar-inverse">
+    	<nav class="navbar navbar-inverse" id="navbar">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
 		      <a class="navbar-brand" id="bigtext" href="#">Jeopardy Question Directory</a>
@@ -51,7 +51,7 @@
             <h1 class="text-center" id="searchbycattitle">Search By Category</h1>
             <form><input id="categoryinput" class="textbox1" type="text" placeholder="Category"><br></form>
             <button type = "button" id="categorysubmit" onclick="categoryGeneration()">Submit</button>
-            
+            <label id="searchdisclaimer">Disclaimer: Search takes around 20 seconds to process</label>
         </div>
     </div>
     </section>
@@ -101,7 +101,7 @@
     </div>
     </section>
     <section>
-    <div class ="randomvalues"></div>
+        <div class ="randomvalues"></div>
     </section>
     
 </html>
