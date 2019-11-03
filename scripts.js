@@ -32,6 +32,11 @@ function categoryGeneration(){
 		output += '<button onclick="showCategoryInfo('+dataid[i]+')">'+categorytitle[i]+' ID = '+dataid[i]+')</button>';
 	}
 	output += '</div>'
+	if(categorytitle.length==0){
+		alert("Sorry, no categories were found for your search")
+	}else{
+		alert("Search has been completed!")
+	}
 	//alert(output);
   	$('div.categoryvalues').html(output);
 }
